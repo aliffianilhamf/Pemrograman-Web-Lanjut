@@ -34,6 +34,7 @@ if (isset($_POST["pemesan"])) {
             <?php
             $nomor = 0;
             $total = 0;
+            var_dump($_POST);
             foreach ($_POST as $name => $qty) :
                 if ($qty == "" || $qty == "0") continue;
                 $nomor++;
